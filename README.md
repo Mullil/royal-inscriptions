@@ -1,3 +1,6 @@
 Computational literacy 2024 project
 
-[final_project.pdf](https://github.com/user-attachments/files/18184448/final_project.pdf)
+The report of the project can be read here:
+[final_project.pdf](https://github.com/Mullil/royal-inscriptions/blob/main/final_project.pdf)
+
+The instructions to reproduce the results can be found in the reproduction_instructions file.
