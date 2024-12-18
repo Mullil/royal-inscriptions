@@ -8,7 +8,7 @@ LagasII_kings = process_corpus.LagasII_kings()
 UrIII_kings = process_corpus.UrIII_kings()
 
 
-def king_god_network(king_dict):
+def king_god_network(king_dict, filename):
     G = nx.DiGraph()
     for king, deities in king_dict.items():
         for deity in deities:
@@ -31,9 +31,9 @@ def king_god_network(king_dict):
         edge_color="gray",
         font_size=8,
         font_color="black",)
-    plt.show()
+    plt.savefig(filename)
 
-king_god_network(ED_kings)
-king_god_network(OA_kings)
-king_god_network(LagasII_kings)
-king_god_network(UrIII_kings)
+king_god_network(ED_kings, "../figures/ed_kings.png")
+king_god_network(OA_kings, "../figures/oa_kings.png")
+king_god_network(LagasII_kings, "../figures/lagasII_kings.png")
+king_god_network(UrIII_kings, "../figures/urIII_kings.png")
