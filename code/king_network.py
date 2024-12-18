@@ -58,7 +58,7 @@ def all_periods(ED, OA, LagasII, UrIII):  # This function draws a network with k
         edge_color="gray",
         font_size=10,
     )
-    plt.show()
+    plt.savefig('kings.png')
 
 all_periods(ED_kings, OA_kings, LagasII_kings, UrIII_kings)
 
